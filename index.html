@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: GitHub Pages</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Git<span class="highlight">Guide</span></a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tutorial">Pasos</a></li>
+                <li><a href="#pdf">Guía PDF</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Sube tu Web a <span class="gradient-text">GitHub Pages</span></h1>
+                <p>La guía definitiva para desplegar tu portafolio o proyecto gratis en minutos.</p>
+                <a href="#tutorial" class="btn btn-primary">Comenzar Ahora</a>
+            </div>
+        </section>
+
+        <section id="tutorial" class="section">
+            <div class="container">
+                <h2 class="section-title">¿Cómo Subir tu Página?</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fab fa-github"></i></div>
+                        <h3>1. Crea un Repositorio</h3>
+                        <p>Ve a GitHub, crea un nuevo repositorio público con el nombre que desees (ej: <code>mi-web</code>).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-file-code"></i></div>
+                        <h3>2. Prepara tus Archivos</h3>
+                        <p>Asegúrate de que tu archivo principal se llame <code>index.html</code>. Es obligatorio para que funcione.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-upload"></i></div>
+                        <h3>3. Sube el Código</h3>
+                        <p>Usa <code>git push</code> o sube los archivos manualmente mediante la interfaz web de "Upload files".</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-cog"></i></div>
+                        <h3>4. Activa Pages</h3>
+                        <p>En "Settings" > "Pages", selecciona la rama <code>main</code> o <code>master</code> y guarda. ¡Listo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pdf" class="section section-dark">
+            <div class="container">
+                <h2 class="section-title">Guía Completa en PDF</h2>
+                <p class="section-desc">Visualiza o descarga el documento detallado con capturas de pantalla.</p>
+                <div class="pdf-wrapper">
+                    <object data="guia.pdf" type="application/pdf" width="100%" height="600px">
+                        <div class="pdf-fallback">
+                            <p>Tu navegador no puede visualizar este PDF.</p>
+                            <a href="guia.pdf" class="btn btn-secondary" download>Descargar PDF</a>
+                        </div>
+                    </object>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 GitGuide. Todos los derechos reservados.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
